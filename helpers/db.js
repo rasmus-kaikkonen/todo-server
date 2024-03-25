@@ -3,12 +3,12 @@ const { Pool } = require('pg');
 
 const openDb = () => {
     const pool = new Pool({
-        user: process.env.DB_USER,
-        host: process.env.DB_HOST,
-        database: process.env.DB_NAME,
-        password: process.env.DB_PASSWORD,
-        port: process.env.DB_PORT,
-		ssl: process.env.SSL
+        user: "root",
+        host: 5432,
+        database: "todo_r1ks",
+        password: "hWx4LR2ppYdXmINiR7ROeVxmm0EXXxNg",
+        port: 10000,
+        ssl: true
     });
     return pool;
 }
